@@ -1,14 +1,14 @@
 import React from 'react'
 import './Navbar.css'
 import {FaBars, FaHotel} from 'react-icons/fa'
-const Navbar = () => {
+const Navbar = ({toggle}) => {
     return (
         <>
         <div className="nav">
             <div className="nav-logo">
                 <FaHotel/>{" "}Yatra
             </div>
-            <div className="mobile-icon">
+            <div className="mobile-icon" onClick={toggle}>
                 <FaBars/>
             </div>
             <div className="nav-menu">
